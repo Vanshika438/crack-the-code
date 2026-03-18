@@ -1,0 +1,38 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --surface2: #1a1a26;
+  --border: #2a2a40;
+  --accent: #6c63ff;
+  --accent2: #ff6584;
+  --success: #43e97b;
+  --warning: #ffd93d;
+  --text: #f0f0ff;
+  --text2: #8888aa;
+  --bull: #43e97b;
+  --cow: #ffd93d;
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-display);
+}
+
+body {
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(108,99,255,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(255,101,132,0.06) 0%, transparent 50%);
+  min-height: 100vh;
+}
+
+button { cursor: pointer; font-family: var(--font-display); border: none; outline: none; }
+input { font-family: var(--font-mono); outline: none; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }

@@ -1,0 +1,25 @@
+.gameover { display: flex; flex-direction: column; align-items: center; gap: 1.2rem; text-align: center; max-width: 400px; width: 100%; }
+.result-icon { font-size: 4rem; animation: drop 0.5s cubic-bezier(.34,1.56,.64,1) both; }
+@keyframes drop { from { transform: scale(0) translateY(-40px); opacity:0; } to { transform: scale(1) translateY(0); opacity:1; } }
+h2 { font-size: 2rem; font-weight: 800; }
+h2.win { color: var(--success); }
+h2.lose { color: var(--accent2); }
+.result-sub { color: var(--text2); font-size: 0.9rem; }
+.scoreboard { width: 100%; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1rem; }
+.scoreboard-label { font-size: 11px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+.score-rows { display: flex; flex-direction: column; gap: 6px; }
+.score-row { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 1rem; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; font-size: 14px; }
+.score-row.winner-row { border-color: var(--success); }
+.score-player { font-weight: 600; }
+.score-pts { font-family: var(--font-mono); font-weight: 700; color: var(--accent); }
+.secrets-reveal { width: 100%; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1rem; }
+.secrets-label { font-size: 12px; color: var(--text2); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.secrets-grid { display: flex; gap: 12px; justify-content: center; }
+.secret-card { flex: 1; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem; text-align: center; }
+.secret-name { font-size: 11px; color: var(--text2); margin-bottom: 4px; }
+.secret-code { font-family: var(--font-mono); font-size: 1.8rem; font-weight: 700; color: var(--accent); letter-spacing: 0.2em; }
+.actions { display: flex; gap: 10px; width: 100%; }
+.btn-rematch { flex: 1; padding: 0.8rem; background: var(--accent); color: white; border-radius: 8px; font-weight: 700; font-size: 15px; transition: all 0.2s; }
+.btn-rematch:hover { background: #7d75ff; }
+.btn-leave { flex: 1; padding: 0.8rem; background: transparent; color: var(--text2); border-radius: 8px; font-weight: 700; font-size: 15px; border: 1px solid var(--border); transition: all 0.2s; }
+.btn-leave:hover { color: var(--text); border-color: var(--text2); }
