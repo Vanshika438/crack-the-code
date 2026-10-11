@@ -2,6 +2,8 @@
 
 A real-time multiplayer code-breaking game built with React + Node.js + Socket.io.
 
+🎮 **Play Live:** https://crack-the-code-client.onrender.com/
+
 ## How to Play
 
 Each player sets a secret 4-digit code. Then take turns guessing each other's code.
@@ -13,6 +15,7 @@ After every guess you get:
 First player to get **📍 4** wins!
 
 **Example:** Secret is `1 2 3 4`, Guess is `1 5 3 9`
+
 → 🎯 2 (digits 1 and 3 exist) &nbsp; 📍 2 (1 and 3 are in the right spots)
 
 ## Modes
@@ -32,6 +35,7 @@ First player to get **📍 4** wins!
 ## Run Locally
 
 **Backend**
+
 ```bash
 cd server
 npm install
@@ -39,6 +43,7 @@ npm run dev        # runs on http://localhost:3001
 ```
 
 **Frontend**
+
 ```bash
 cd client
 npm install
@@ -52,11 +57,11 @@ Open two browser tabs at `http://localhost:5173` to play both sides.
 
 - **Backend** → [Render](https://render.com) Web Service (root: `server`, start: `npm start`)
 - **Frontend** → Render Static Site (root: `client`, build: `npm run build`, publish: `dist`)
-- Set env var on frontend: `VITE_SERVER_URL=https://your-server.onrender.com`
+- Set the frontend environment variable: `VITE_SERVER_URL=https://your-server.onrender.com`
 
 ## Project Structure
 
-```
+```text
 crack-the-code/
 ├── server/
 │   ├── index.js        # Socket.io server + game room logic
